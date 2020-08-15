@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/feed.css">
+    <meta charset="utf-8">
+    <title>IOT PET FEEDER WEB CONTROL</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>FEED YOUR PET</h1>
+    </header>
+
+    <nav>
+        <ul>
+          <li><a href = "home.html">HOME</a></li>
+          <li><a href = "food.html">FOOD CAPACITY</a></li>
+          <li><a href = "water.html">WATER CAPACITY</a></li>
+          <li><a class = 'active' href = "feed.html">FEED YOUR PET</a></li>
+         </ul>
+    </nav>
+
+    <main>    
+
+      <h2>You can set a time at below to dispense the food to the bowl when the time is reached</h2>
+      
+      <div class = 'info' >
+        <span>Timer 1 : </span>
+        <input id ='time1' type = 'time'>
+        <span>Timer 2 : </span>
+        <input id ='time2' type = 'time'>
+        <span>Timer 3 : </span>
+        <input id ='time3' type = 'time'>
+        <button id='Timer'>Submit</button>
+      </div>
+      <p>Please select the time carefully before you submit it.</p>
+       <hr>
+      
+      <h2>You can set the weight of the food that you want to dispense</h2>
+      <p></p>
+      <div class = 'info' >
+        <span>Food weight 1</span>
+        <input id ='KG1' type = 'number'>
+        <button id='5'>Submit</button>
+        <span>Food weight 2</span>
+        <input id ='KG2' type = 'number'>
+        <button id='6'>Submit</button>
+      </div>
+      <hr>
+      <h2>You can feed your pet by pressing the button below. </h2>
+      <!--Button to sent signal to open the motor-->
+      <!--set every button to have an id so that button will run independently in javascript-->
+      
+        <div class = 'button'>
+          <input type="button" value="Open" id = '1' />
+          <label>Motor 1</label>
+          <input type="button" value="Open" id = '2' />
+          <label>Motor 2</label>
+        </div>
+          
+
+      <script async src="scripts/button.js"></script>
+      
+      <hr>
+      <br>
+      <h2>Motor Activity </h2>
+      <div class='hi'>
+        <p>Motor 1</p><p>Motor 2</p>                
+      </div>
+
+      <div class="back">
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;"src="https://thingspeak.com/channels/1097861/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1097861/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+      </div> 
+      
+      <div class='hi'>
+        <p>Graph</p><p>Graph</p>                
+      </div> 
+      
+    </main>
+
+
+    <footer>
+	    <p>Copyright 2020 by IDP Group 1 IOT PET FEEDER. All right reversed.</p>
+    </footer> 
+  </body>
+
+</html>

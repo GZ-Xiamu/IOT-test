@@ -1,0 +1,14 @@
+
+
+.text{
+  width:900px;
+  padding:40px;
+  margin:200px auto;
+  color:rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: justify;
+  background-color: lightgrey;
+  }
+ .text h2{
+   color:blue;
+ } 

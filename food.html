@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles/food.css">
+      <meta charset="utf-8">
+    <title>IOT PET FEEDER WEB CONTROL</title>
+    </head>
+    
+    <body>
+      <h1>FOOD LEVEL</h1>
+      <nav>
+        <ul>
+          <li><a  href = "home.html">HOME</a></li>
+          <li><a class = 'active' href = "food.html">FOOD CAPACITY</a></li>
+          <li><a href = "water.html">WATER CAPACITY</a></li>
+          <li><a href = "feed.html">FEED YOUR PET</a></li>
+         </ul>
+      </nav>
+      <main>
+        <h2>The food storage now</h2>
+        <p >Food Storage 1</p>
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1097861/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15">test</iframe>
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1097861/widgets/199480"></iframe>
+        <div class='hi'>
+          <p>Graph</p><p>Food level 1</p>                
+        </div>
+        <br></br>
+        <p id = 'sub'>Food Storage 2</p>
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1097861/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1097861/widgets/199481"></iframe>
+        <div class='hi'>
+          <p>Graph</p><p>Food level 2</p>                
+        </div>
+      </main>
+      
+      
+      
+
+      <footer>
+	      <p>Copyright 2020 by IDP Group 1 IOT PET FEEDER. All right reversed.</p>
+      </footer>
+    </body>
+    
+
+</html>
