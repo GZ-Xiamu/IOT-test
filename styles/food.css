@@ -96,10 +96,18 @@ p {
 
 }
 .hi p{
-    font-size: 25px;
+    font-size: 30px;
     color: #1d5de7;
-    margin-left: 325px;
-    margin-right:220px;
+    margin-left: 286px;
+    margin-right:170px;
+    display: inline-block;
+    font-weight: 700;
+}
+.header p{
+    font-size: 40px;
+    color: #1d5de7;
+    margin-left: 260px;
+    margin-right:84px;
     display: inline-block;
     font-weight: 700;
 }

@@ -148,11 +148,11 @@ iframe {
 
 }
 
-.hi p{
-  font-size: 25px;
+.header p{
+  font-size: 40px;
   color: #1d5de7;
-  margin-left: 325px;
-  margin-right:220px;
+  margin-left: 300px;
+  margin-right:200px;
   display: inline-block;
   
 }
@@ -174,4 +174,11 @@ hr{
   font-size: 30px;
   font-weight: bold;
   margin: 10px;
+}
+.subtitle p{
+  font-size: 30px;
+  color: #1d5de7;
+  margin-left: 186px;
+  margin-right:68px;
+  display: inline-block;
 }
